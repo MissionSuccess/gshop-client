@@ -21,6 +21,9 @@ export const reqShops = ({ latitude, longitude }) => ajax('/api/shops', {
     longitude
 })
 
+// 4、根据经纬度和关键字搜索商铺列表
+export const reqSearchShop = (geohash, keyword) => ajax('/api/search_shops', { geohash, keyword })
+
 /**
  * 账号密码登录
  */
